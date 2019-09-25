@@ -10,6 +10,10 @@ ElementaryParticle::ElementaryParticle(string name, float mass, bool isBoson)
 
 }
 
+ElementaryParticle::~ElementaryParticle()
+{
+}
+
 void ElementaryParticle::printInfo()
 {
   cout << "Particle named " << _name << " has a mass of " << _mass << " GeV." << endl;

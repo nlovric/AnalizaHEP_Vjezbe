@@ -8,11 +8,16 @@ using namespace std;
 
 int main()
 {
-  ElementaryParticle *Higgs;
+  ElementaryParticle Higgs("Higgs boson", 125.6, true);
+  ElementaryParticle TopQuark("Top quark", 173.0, false);
 
-  Higgs = new ElementaryParticle("Higgs boson", 125.26, true);
+  Higgs.printInfo();
+  TopQuark.printInfo();
 
-  Higgs->printInfo();
-  
+  ElementaryParticle *Z;
+  Z = new ElementaryParticle("Z boson", 91.2, true);
+  Z->printInfo();
+  Z->~ElementaryParticle();
+
   return 0;
 }
