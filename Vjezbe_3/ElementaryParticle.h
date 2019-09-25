@@ -8,6 +8,7 @@ using namespace std;
 // Declare class ElementaryParticle
 class ElementaryParticle
 {
+  // public member declaration
   public:
     ElementaryParticle( );
     ElementaryParticle( string name, float mass, bool isBoson );
@@ -29,6 +30,7 @@ class ElementaryParticle
 
     void bosonDecay( ElementaryParticle* particle_1, ElementaryParticle* particle_2);
 
+  // private member declaration
   private:
     int random_number;
     int random_number_x, random_number_y, random_number_z;
