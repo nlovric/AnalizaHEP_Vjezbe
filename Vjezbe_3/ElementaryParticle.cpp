@@ -85,8 +85,8 @@ void ElementaryParticle::bosonDecay( ElementaryParticle *particle_1, ElementaryP
 
   if( random_number < 214) //21.4% decay to W+W-
   {
-    particle_1->setInfo("W+ boson", 80.4, true);
-    particle_2->setInfo("W- boson", 80.4, true);
+    particle_1->setInfo("W+", 80.4, true);
+    particle_2->setInfo("W-", 80.4, true);
   }
 
   else if( random_number < 214 + 64) //(21.4% +) 6.4% decay to tau+tau-
@@ -97,14 +97,14 @@ void ElementaryParticle::bosonDecay( ElementaryParticle *particle_1, ElementaryP
 
   else if( random_number < 214 + 64 + 26)//(21.4% + 6.4% +) 2.6% decay to ZZ
   {
-    particle_1->setInfo("Z boson", 91.2, true);
-    particle_2->setInfo("Z boson", 91.2, true);
+    particle_1->setInfo("Z", 91.2, true);
+    particle_2->setInfo("Z", 91.2, true);
   }
 
   else // decay to bb
   {
-    particle_1->setInfo("b quark", 4.18, false);
-    particle_2->setInfo("b quark", 4.18, false);
+    particle_1->setInfo("b", 4.18, false);
+    particle_2->setInfo("b", 4.18, false);
   }
 
   //Decay kinematics

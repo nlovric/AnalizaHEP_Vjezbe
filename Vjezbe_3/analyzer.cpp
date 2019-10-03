@@ -20,7 +20,7 @@ int main()
   // Declare Higgs object that will decay
   ElementaryParticle *Higgs;
 
-  Higgs = new ElementaryParticle("Higgs boson", 125.6, true);
+  Higgs = new ElementaryParticle("Higgs", 125.6, true);
 
   // Declare two decay products of Higgs
   ElementaryParticle *decayParticle_1, *decayParticle_2;
